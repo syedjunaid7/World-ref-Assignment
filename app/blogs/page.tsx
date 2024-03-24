@@ -1,21 +1,9 @@
 "use client";
-import { useUser } from "@auth0/nextjs-auth0/client";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import AppService from "../service";
 import Modal from "../components/modal";
 
-export type BlogPost = {
-  id: string;
-  title: string;
-  description: string;
-  postedBy: string;
-  email: string;
-};
-
-export type BlogListProps = {
-  blogs: BlogPost[];
-};
 
 const defaultSate = {
   isFetching: false,
@@ -24,7 +12,7 @@ const defaultSate = {
   isOpen: false,
 };
 
-const BlogList: React.FC<BlogListProps> = () => {
+const BlogList: React.FC = () => {
   const router = useRouter();
   const [state, setState] = useState<any>(defaultSate);
 
