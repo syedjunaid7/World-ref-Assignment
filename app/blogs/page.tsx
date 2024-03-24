@@ -53,7 +53,7 @@ const BlogList: React.FC = () => {
           onClick={() => router.push("/blogs/create")}
           className="mt-4 px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-700 transition-colors"
         >
-          Create Blog
+          Create Blogs
         </button>
         {!state.isFetching && !state.blogs.length && (
           <div className="max-w-sm rounded overflow-hidden shadow-lg p-4 m-4 text-center">
