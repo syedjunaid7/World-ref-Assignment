@@ -12,7 +12,7 @@ const defaultSate = {
   isOpen: false,
 };
 
-const BlogList: React.FC = () => {
+const BlogList = () => {
   const router = useRouter();
   const [state, setState] = useState<any>(defaultSate);
 
